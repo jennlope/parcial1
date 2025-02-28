@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Lista de Vuelos</title></head>
+<body>
+    <h1>Lista de Vuelos</h1>
+    <ul>
+        {% for Vuelo in vuelos %}
+            <li style="color: {% if Vuelo.tipo == 'Nacional' %}blue{% endif %}; font-weight: {% if Vuelo.tipo  == 'Internacional' %}bold{% endif %};">
+                {{ Vuelo.id }} - {{ Vuelo.name }} - {{ Vuelo.tipo  }} - ${{ Vuelo.precio }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

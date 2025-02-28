@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class PagesConfig(AppConfig):
+class VuelosConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "pages"
+    name = "vuelos"
